@@ -12,24 +12,33 @@
     <meta name="robots" content="tesla, boston dynamics, unitree">
     <title>Stay Ahead with MAGA: Your Gateway to AI
         Innovations!</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <header>
-        <h1>MAGA: Your Gateway to AI Innovations</h1>
+        <div id="hero-container">
+            <img src="images/hero.jpg" id="hero">
+            <h1 id="hero-title">MAGA: Your Gateway to AI Innovations</h1>
+        </div>
         <nav>
-            <a href="#anchor_intro">Introduction</a> |
-            <a href="#anchor_llm">LLM</a> |
-            <a href="#anchor_robot">Robot</a> |
-            <a href="#anchor_news">News</a>
+            <div class="nav-container">
+                <a class="nav-item" href="#anchor-intro">Introduction</a>
+                <a class="nav-item" href="#anchor-llm">LLM</a>
+                <a class="nav-item" href="#anchor-robot">Robot</a>
+                <a class="nav-item" href="#anchor-news">News</a>
+            </div>
         </nav>
     </header>
     <br><br>
     <main>
-        <section id="anchor_intro">
-            <h2>What is AI?</h2>
-            <div>
-                <p>Artificial intelligence (AI) refers to the capability of computational systems to perform tasks
+        <section id="anchor-intro" class="dark-section">
+            <h2>WHAT IS AI?</h2>
+            <div class="flex-container">
+                <img class="float-right section-img"
+                    src="https://scitechdaily.com/images/Artificial-Intelligence-Robot-Thinking-Brain-777x444.jpg">
+                <p>Artificial intelligence (AI) refers to the capability of computational systems to
+                    perform tasks
                     typically
                     associated with human intelligence, such as learning, reasoning, problem-solving, perception, and
                     decision-making. It is a field of research in computer science that develops and studies methods and
@@ -44,96 +53,150 @@
                     take
                     actions that maximize their chances of achieving defined goals.[1] Such machines may be called AIs.
                 </p>
-                <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dall-e_3_%28jan_%2724%29_artificial_intelligence_icon.png/250px-Dall-e_3_%28jan_%2724%29_artificial_intelligence_icon.png">
+
             </div>
         </section>
         <br>
-        <section id="anchor_llm">
+        <section id="anchor-llm">
             <h2>Large Language Model</h2>
-            <p>A large language model (LLM) is a type of machine learning model designed for natural language processing
-                tasks such as language generation. LLMs are language models with many parameters, and are trained with
-                self-supervised learning on a vast amount of text.
+            <div>
+                <img src="images/llm.jpg" class="section-img float-right" style="margin: 8px 0 16px 16px;">
+                <p>A large language model (LLM) is a sophisticated type of machine learning model specifically designed
+                    to handle a variety of natural language processing (NLP) tasks, including but not limited to
+                    language generation, translation, summarization, and sentiment analysis. LLMs are characterized by
+                    their extensive number of parameters, often numbering in the billions, which allows them to capture
+                    complex patterns and nuances in human language.
+                    These models are typically trained using a method known as self-supervised learning, where they
+                    learn to predict the next word in a sentence given the preceding context. This training is conducted
+                    on vast and diverse datasets, often comprising text from books, articles, websites, and other
+                    written sources. The sheer volume of data helps the models to generalize better and understand a
+                    wide range of topics and linguistic structures.
+                    The most advanced LLMs are often based on the architecture of generative pretrained transformers
+                    (GPTs). This architecture utilizes mechanisms such as attention, which allows the model to weigh the
+                    importance of different words in a sentence relative to one another, thereby improving its
+                    understanding of context and meaning. The "pretrained" aspect refers to the initial training phase,
+                    where the model learns from a broad dataset before being fine-tuned on specific tasks or domains.
+                    Fine-tuning is a crucial step that allows LLMs to adapt to particular applications, such as customer
+                    service chatbots, content creation, or technical support. This process involves training the model
+                    further on a smaller, task-specific dataset, enabling it to perform optimally in that context.
+                    Additionally, prompt engineering plays a significant role in guiding the model's responses by
+                    carefully crafting the input it receives, which can lead to more relevant and accurate outputs.
+                    Despite their impressive capabilities, LLMs are not without limitations. They acquire predictive
+                    power regarding syntax, semantics, and the ontologies inherent in human language corpora, which
+                    enables them to generate coherent and contextually appropriate text. However, they also inherit the
+                    inaccuracies, biases, and stereotypes present in the training data. This can lead to the generation
+                    of biased or misleading information, raising ethical concerns about their deployment in real-world
+                    applications. Researchers and developers are actively working on methods to mitigate these biases
+                    and improve the reliability and fairness of LLM outputs.</p>
+            </div>
 
-                The largest and most capable LLMs are generative pretrained transformers (GPTs). Modern models can be
-                fine-tuned for specific tasks or guided by prompt engineering. These models acquire predictive power
-                regarding syntax, semantics, and ontologies inherent in human language corpora, but they also inherit
-                inaccuracies and biases present in the data they are trained in.</p>
-            <img src="images/llm.jpg" width="50%" height="25%">
         </section>
         <br>
-        <section id="anchor_robot">
+        <section id="anchor-robot" class="dark-section">
             <h2>Robots with AI</h2>
             <p>In 2025, robots with AI are expected to become more common and integrated into various industries and
                 aspects of life. Trends include advancements in humanoid robots, cobots, mobile manipulators, and
                 AI-powered vision systems, along with the increased use of generative AI and democratization of AI
                 technologies. </p>
-            <img src="images/robot.jpg" width="50%" height="25%">
+            <div class="robot-grid">
+                <div class="robot-grid-item"><img src="https://www.roboticstomorrow.com/images/articles/20688.jpg"
+                        width="100%" height="90%">Collaborative Robots
+                    (Cobots)</div>
+                <div class="robot-grid-item"><img
+                        src="https://eu-images.contentstack.com/v3/assets/blt31d6b0704ba96e9d/blt864d5a1fcf285160/66e883866ce537e5c3bdd38f/GettyImages-1654943682.jpg?width=1280&auto=webp&quality=95&format=jpg&disable=upscale"
+                        width="100%" height="90%">Industrial Robots
+                </div>
+                <div class="robot-grid-item"><img
+                        src="https://www.automatedwarehouseonline.com/wp-content/uploads/2024/11/MiR_MC600_UR20_UR30.jpg"
+                        width="100%" height="90%">Mobile Manipulators
+                    (MoMas)</div>
+                <div class="robot-grid-item"><img src="images/robot.jpg" width="100%" height="90%">Humanoid Robots</div>
+                <div class="robot-grid-item"><img
+                        src="https://delta-q.com/wp-content/uploads/2022/10/Autonomous-Mobile-Robot-AMR-scaled.jpeg"
+                        width="100%" height="90%">Autonomous Mobile
+                    Robots (AMRs)</div>
+                <div class="robot-grid-item"><img
+                        src="https://lynxter.fr/wp-content/uploads/2024/01/soft-roborics-Silicone-based-3DPrinting6.png"
+                        width="100%" height="90%">Soft Robotics</div>
+            </div>
         </section>
         <br>
-        <article id="anchor_news">
-            <h1>Latest AI News</h1>
+        <section id="anchor-news">
+            <h1>AI TRENDS</h1>
             <article>
-                <h2>AI strategies for cybersecurity press releases that get coverage</h2>
-                <a href="https://www.artificialintelligence-news.com/news/ai-strategies-for-cybersecurity-press-releases-that-get-coverage/"
-                    target="_blank">[Read Full Story]</a>
-                <p>GIf you’ve ever tried to get your cybersecurity news picked up by media outlets, you’ll know just how
-                    much of a challenge (and how disheartening) it can be. You pour hours into what you think is an
-                    excellent announcement about your new security tool, threat research, or vulnerability discovery,
-                    only to watch it disappear into journalists’ overflowing inboxes without a trace.
-
-                    The cyber PR space is brutally competitive. Reporters at top publications receive tens, if not
-                    hundreds, of pitches each day, and they have no choice but to be highly selective about which
-                    releases they choose to cover and which to discard. Your challenge then isn’t just creating a good
-                    press release, it’s making one that grabs attention and stands out in an industry drowning in
-                    technical jargon and “revolutionary” solutions.</p>
-                <img src="https://www.artificialintelligence-news.com/wp-content/uploads/2025/04/Picture1.jpg"
-                    width="50%" height="25%">
-
+                <div id="article-grid-1">
+                    <h2 id="article-grid-1-title">Where is AI heading?</h2>
+                    <div id="article-grid-1-content">
+                        <p>Since the days when computers ran on punch cards and vacuum tubes,
+                            humans have been
+                            preoccupied
+                            with
+                            questions of what those computers could do when they became even more advanced — and what
+                            that
+                            would
+                            mean for humanity. Would they be able to help us solve our biggest challenges, from climate
+                            change
+                            to world hunger? Or would they turn on us and become our greatest threat? As artificial
+                            intelligence
+                            (AI) has started to hit the mainstream, those questions have become much more tangible.</p>
+                        <a class="article-link"
+                            href="https://www.nokia.com/thought-leadership/articles/ai/where-is-ai-heading/?did=D00000008276&utm_campaign=PoNAircover&utm_source=google&utm_medium=cpc&utm_content=Where%20is%20AI%20heading&utm_term=Google%20search&gad_source=1&gbraid=0AAAAA9uC3R7UC0Ru_wkX3kqYDupEYtDPu&gclid=Cj0KCQjwoNzABhDbARIsALfY8VNxoSF86pebpBpMi0xUNkN-7AteTwPzv5IfSNRYCUTsBQDPcKGjbQ0aAu-OEALw_wcB"
+                            target="_blank">[Read Full Story]</a>
+                    </div>
+                </div>
             </article>
             <article>
-                <h2>AI strategies for cybersecurity press releases that get coverage</h2>
-                <a href="https://www.artificialintelligence-news.com/news/ai-strategies-for-cybersecurity-press-releases-that-get-coverage/"
-                    target="_blank">[Read Full Story]</a>
-                <p>GIf you’ve ever tried to get your cybersecurity news picked up by media outlets, you’ll know just how
-                    much of a challenge (and how disheartening) it can be. You pour hours into what you think is an
-                    excellent announcement about your new security tool, threat research, or vulnerability discovery,
-                    only to watch it disappear into journalists’ overflowing inboxes without a trace.
+                <div id="article-grid-2">
+                    <h2 id="article-grid-2-title">AI strategies for cybersecurity press releases that get coverage</h2>
+                    <div id="article-grid-2-content">
+                        <p>GIf you’ve ever tried to get your cybersecurity news picked up by media outlets, you’ll know
+                            just how
+                            much of a challenge (and how disheartening) it can be. You pour hours into what you think is
+                            an
+                            excellent announcement about your new security tool, threat research, or vulnerability
+                            discovery,
+                            only to watch it disappear into journalists’ overflowing inboxes without a trace.
 
-                    The cyber PR space is brutally competitive. Reporters at top publications receive tens, if not
-                    hundreds, of pitches each day, and they have no choice but to be highly selective about which
-                    releases they choose to cover and which to discard. Your challenge then isn’t just creating a good
-                    press release, it’s making one that grabs attention and stands out in an industry drowning in
-                    technical jargon and “revolutionary” solutions.</p>
-                <img src="https://www.artificialintelligence-news.com/wp-content/uploads/2025/04/Picture1.jpg"
-                    width="50%" height="25%">
+                            The cyber PR space is brutally competitive. Reporters at top publications receive tens, if
+                            not
+                            hundreds, of pitches each day, and they have no choice but to be highly selective about
+                            which
+                            releases they choose to cover and which to discard.</p>
+                        <a class="article-link"
+                            href="https://www.artificialintelligence-news.com/news/ai-strategies-for-cybersecurity-press-releases-that-get-coverage/"
+                            target="_blank">[Read Full Story]</a>
+                    </div>
+                </div>
             </article>
             <article>
-                <h2>AI strategies for cybersecurity press releases that get coverage</h2>
-                <a href="https://www.artificialintelligence-news.com/news/ai-strategies-for-cybersecurity-press-releases-that-get-coverage/"
-                    target="_blank">[Read Full Story]</a>
-                <p>GIf you’ve ever tried to get your cybersecurity news picked up by media outlets, you’ll know just how
-                    much of a challenge (and how disheartening) it can be. You pour hours into what you think is an
-                    excellent announcement about your new security tool, threat research, or vulnerability discovery,
-                    only to watch it disappear into journalists’ overflowing inboxes without a trace.
-
-                    The cyber PR space is brutally competitive. Reporters at top publications receive tens, if not
-                    hundreds, of pitches each day, and they have no choice but to be highly selective about which
-                    releases they choose to cover and which to discard. Your challenge then isn’t just creating a good
-                    press release, it’s making one that grabs attention and stands out in an industry drowning in
-                    technical jargon and “revolutionary” solutions.</p>
-                <img src="https://www.artificialintelligence-news.com/wp-content/uploads/2025/04/Picture1.jpg"
-                    width="50%" height="25%">
+                <div id="article-grid-3">
+                    <h2 id="article-grid-3-title">Can China repeat its EV success in humanoid robots?</h2>
+                    <div id="article-grid-3-content">
+                        <p>For the second time in a year, Unitree Robotics caused a stir on social media recently with
+                            videos of
+                            its humanoid robot’s acrobatic accomplishments. This time around, the G1 robot completed a
+                            standing
+                            side flip and a kungfu move known as a carp jump—both more complicated than the standing
+                            front flip
+                            that the startup’s H1 model performed last year.</p>
+                        <a class="article-link"
+                            href="https://kr-asia.com/can-china-repeat-its-ev-success-in-humanoid-robots"
+                            target="_blank">[Read Full Story]</a>
+                    </div>
+                </div>
             </article>
-        </article>
+        </section>
     </main>
     <br>
     <footer>
         <hr>
-        <img src="images/ai.jpg" width="20px" height="20px"> © 2025 MAGA &nbsp;
-        <a href="mailto: mihw001@gmail.com">Contact</a> |
-        <a href="#">Terms</a> |
-        <a href="https://github.com/dymx101" target="_blank">About Us</a>
+        <div class="footer-container default-margin">
+            <img src="images/ai.jpg" width="20px" height="20px">
+            <span class="footer-text">© 2025 MAGA &nbsp;</span>
+            <a href="mailto: mihw001@gmail.com" class="footer-text">Contact</a>
+            <a href="#" class="footer-text">Terms</a>
+            <a href="https://github.com/dymx101" target="_blank" class="footer-text">About Us</a>
+        </div>
     </footer>
 </body>
 
