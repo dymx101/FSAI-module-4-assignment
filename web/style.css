@@ -1,3 +1,4 @@
+/* Tag */
 body {
     background-color: rgb(231, 231, 231);
     margin: 0;
@@ -15,6 +16,7 @@ footer>hr {
     border: 0.5px solid rgb(201, 201, 201);
 }
 
+/* Hyperlink */
 a:link {
     color: rgb(9, 105, 79);
     text-decoration: none;
@@ -59,6 +61,7 @@ a.article-link:active {
     text-decoration: underline;
 }
 
+/* Navigation */
 .nav-container {
     display: flex;
     justify-content: center;
@@ -69,8 +72,16 @@ a.article-link:active {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 100;
+    transition: 0.2s ease-out;
 }
 
+/* Navi item Hover Animation */
+.nav-item:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+/* Float */
 .float-none {
     float: none;
 }
@@ -83,6 +94,7 @@ a.article-link:active {
     float: right;
 }
 
+/* Hero */
 #hero-container {
     position: relative;
 }
@@ -102,6 +114,7 @@ a.article-link:active {
     transform: translate(-50%, -50%);
 }
 
+/* Section */
 section {
     padding: 16px 16px 32px;
 }
@@ -140,6 +153,7 @@ section>h1 {
     margin: 16px;
 }
 
+/* Robitics */
 .robot-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -151,8 +165,17 @@ section>h1 {
     color: rgb(48, 48, 48);
     text-align: center;
     padding: 8px 0px;
+    transition: 0.5s ease;
 }
 
+/* Image Hover Animation */
+.robot-grid-item:hover {
+    opacity: 0.85;
+    transform: scale(1.02);
+    z-index: 2;
+}
+
+/* Article */
 .article-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -219,6 +242,7 @@ section>h1 {
     margin: 16px;
 }
 
+/* Footer */
 .footer-container {
     display: flex;
     align-items: center;
@@ -230,6 +254,22 @@ section>h1 {
     font-size: 12px;
 }
 
+/* Fade In Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition:
+        opacity 1s ease-out,
+        transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
 @media (min-width: 910px) and (max-width: 1170px) {
     .article-grid {
         display: grid;
@@ -287,6 +327,18 @@ section>h1 {
         background-color: rgb(49, 49, 49);
         height: auto;
     }
+
+    #article-grid-2-title {
+        grid-column: auto;
+        grid-row: auto;
+        margin: 16px;
+    }
+
+    #article-grid-2-content {
+        grid-column: auto;
+        grid-row: auto;
+        margin: 16px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -335,5 +387,17 @@ section>h1 {
         background-image: none;
         background-color: rgb(49, 49, 49);
         height: auto;
+    }
+
+    #article-grid-2-title {
+        grid-column: auto;
+        grid-row: auto;
+        margin: 16px;
+    }
+
+    #article-grid-2-content {
+        grid-column: auto;
+        grid-row: auto;
+        margin: 16px;
     }
 }
