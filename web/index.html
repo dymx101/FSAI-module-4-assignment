@@ -25,17 +25,17 @@
             <div class="nav-container">
                 <a class="nav-item" href="#anchor-intro">Introduction</a>
                 <a class="nav-item" href="#anchor-llm">LLM</a>
-                <a class="nav-item" href="#anchor-robot">Robot</a>
-                <a class="nav-item" href="#anchor-news">News</a>
+                <a class="nav-item" href="#anchor-robot">Robotics</a>
+                <a class="nav-item" href="#anchor-news">Trends</a>
             </div>
         </nav>
     </header>
-    <br><br>
+
     <main>
         <section id="anchor-intro" class="dark-section">
             <h2>WHAT IS AI?</h2>
-            <div class="flex-container">
-                <img class="float-right section-img"
+            <div>
+                <img id="section-img-1"
                     src="https://scitechdaily.com/images/Artificial-Intelligence-Robot-Thinking-Brain-777x444.jpg">
                 <p>Artificial intelligence (AI) refers to the capability of computational systems to
                     perform tasks
@@ -60,7 +60,7 @@
         <section id="anchor-llm">
             <h2>Large Language Model</h2>
             <div>
-                <img src="images/llm.jpg" class="section-img float-right" style="margin: 8px 0 16px 16px;">
+                <img src="images/llm.jpg" id="section-img-2" style="margin: 8px 0 16px 16px;">
                 <p>A large language model (LLM) is a sophisticated type of machine learning model specifically designed
                     to handle a variety of natural language processing (NLP) tasks, including but not limited to
                     language generation, translation, summarization, and sentiment analysis. LLMs are characterized by
@@ -70,24 +70,7 @@
                     learn to predict the next word in a sentence given the preceding context. This training is conducted
                     on vast and diverse datasets, often comprising text from books, articles, websites, and other
                     written sources. The sheer volume of data helps the models to generalize better and understand a
-                    wide range of topics and linguistic structures.
-                    The most advanced LLMs are often based on the architecture of generative pretrained transformers
-                    (GPTs). This architecture utilizes mechanisms such as attention, which allows the model to weigh the
-                    importance of different words in a sentence relative to one another, thereby improving its
-                    understanding of context and meaning. The "pretrained" aspect refers to the initial training phase,
-                    where the model learns from a broad dataset before being fine-tuned on specific tasks or domains.
-                    Fine-tuning is a crucial step that allows LLMs to adapt to particular applications, such as customer
-                    service chatbots, content creation, or technical support. This process involves training the model
-                    further on a smaller, task-specific dataset, enabling it to perform optimally in that context.
-                    Additionally, prompt engineering plays a significant role in guiding the model's responses by
-                    carefully crafting the input it receives, which can lead to more relevant and accurate outputs.
-                    Despite their impressive capabilities, LLMs are not without limitations. They acquire predictive
-                    power regarding syntax, semantics, and the ontologies inherent in human language corpora, which
-                    enables them to generate coherent and contextually appropriate text. However, they also inherit the
-                    inaccuracies, biases, and stereotypes present in the training data. This can lead to the generation
-                    of biased or misleading information, raising ethical concerns about their deployment in real-world
-                    applications. Researchers and developers are actively working on methods to mitigate these biases
-                    and improve the reliability and fairness of LLM outputs.</p>
+                    wide range of topics and linguistic structures.</p>
             </div>
 
         </section>
@@ -124,7 +107,7 @@
         <section id="anchor-news">
             <h1>AI TRENDS</h1>
             <article>
-                <div id="article-grid-1">
+                <div class="article-grid" id="article-grid-setting-1">
                     <h2 id="article-grid-1-title">Where is AI heading?</h2>
                     <div id="article-grid-1-content">
                         <p>Since the days when computers ran on punch cards and vacuum tubes,
@@ -146,7 +129,7 @@
                 </div>
             </article>
             <article>
-                <div id="article-grid-2">
+                <div class="article-grid" id="article-grid-setting-2">
                     <h2 id="article-grid-2-title">AI strategies for cybersecurity press releases that get coverage</h2>
                     <div id="article-grid-2-content">
                         <p>GIf you’ve ever tried to get your cybersecurity news picked up by media outlets, you’ll know
@@ -169,7 +152,7 @@
                 </div>
             </article>
             <article>
-                <div id="article-grid-3">
+                <div class="article-grid" id="article-grid-setting-3">
                     <h2 id="article-grid-3-title">Can China repeat its EV success in humanoid robots?</h2>
                     <div id="article-grid-3-content">
                         <p>For the second time in a year, Unitree Robotics caused a stir on social media recently with

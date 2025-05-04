@@ -118,9 +118,17 @@ section>h1 {
     text-align: center;
 }
 
-.section-img {
+#section-img-1 {
     width: 25%;
     height: 15%;
+    float: left;
+    margin-right: 8px;
+}
+
+#section-img-2 {
+    width: 25%;
+    height: 15%;
+    float: right;
 }
 
 .flex-container {
@@ -145,12 +153,15 @@ section>h1 {
     padding: 8px 0px;
 }
 
-#article-grid-1 {
+.article-grid {
     display: grid;
-    color: rgb(25, 20, 60);
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 40px auto;
     grid-gap: 10px;
+}
+
+#article-grid-setting-1 {
+    color: rgb(25, 20, 60);
     background-image: url("https://www.nokia.com/sites/default/files/2023-10/nok2706-ai-webpage-header01-1920x700px.jpg?height=400&width=1365&resize=1");
     background-size: cover;
     height: 300px;
@@ -168,12 +179,8 @@ section>h1 {
     margin: 16px;
 }
 
-#article-grid-2 {
-    display: grid;
+#article-grid-setting-2 {
     color: rgb(208, 208, 208);
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 40px auto;
-    grid-gap: 10px;
     background-image: url("https://www.artificialintelligence-news.com/wp-content/uploads/2025/04/Picture1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -192,20 +199,16 @@ section>h1 {
     margin: 16px;
 }
 
-#article-grid-3 {
-    display: grid;
+#article-grid-setting-3 {
     color: rgb(186, 186, 186);
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 40px auto;
-    grid-gap: 10px;
     background-image: url("https://console.kr-asia.com/wp-content/uploads/2024/08/Agibot-Expedition-A2-A2W.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 350px;
 }
 
 #article-grid-3-title {
-    grid-column: 1 / 4;
+    grid-column: 1 / span 5;
     grid-row: 1;
     margin: 16px;
 }
@@ -225,4 +228,112 @@ section>h1 {
 .footer-text {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
+}
+
+@media (min-width: 910px) and (max-width: 1170px) {
+    .article-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 48px auto;
+        grid-gap: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 909px) {
+    #section-img-1 {
+        width: 35%;
+        height: 25%;
+        float: left;
+        margin-right: 8px;
+    }
+
+    #section-img-2 {
+        width: 35%;
+        height: 25%;
+        float: right;
+    }
+
+    .robot-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 10px;
+    }
+
+    .article-grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+    }
+
+    #article-grid-setting-1 {
+        color: rgb(25, 20, 60);
+        background-image: none;
+        background-color: rgb(123, 127, 203);
+        height: auto;
+    }
+
+    #article-grid-setting-2 {
+        color: rgb(208, 208, 208);
+        background-image: none;
+        background-color: rgb(33, 48, 96);
+        height: auto;
+    }
+
+    #article-grid-setting-3 {
+        color: rgb(186, 186, 186);
+        background-image: none;
+        background-color: rgb(49, 49, 49);
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    #section-img-1 {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+
+    #section-img-2 {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+
+    .robot-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+    }
+
+    .article-grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+    }
+
+    #article-grid-setting-1 {
+        color: rgb(25, 20, 60);
+        background-image: none;
+        background-color: rgb(123, 127, 203);
+        height: auto;
+    }
+
+    #article-grid-setting-2 {
+        color: rgb(208, 208, 208);
+        background-image: none;
+        background-color: rgb(33, 48, 96);
+        height: auto;
+    }
+
+    #article-grid-setting-3 {
+        color: rgb(186, 186, 186);
+        background-image: none;
+        background-color: rgb(49, 49, 49);
+        height: auto;
+    }
 }
